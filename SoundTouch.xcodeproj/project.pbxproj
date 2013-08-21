@@ -11,26 +11,26 @@
 		29DEFEEA17C39A3D00D98688 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29DEFEE917C39A3D00D98688 /* UIKit.framework */; };
 		29DEFEF017C39A3D00D98688 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 29DEFEEE17C39A3D00D98688 /* InfoPlist.strings */; };
 		29DEFF0D17C39AEB00D98688 /* AAFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 29DEFEF817C39AEB00D98688 /* AAFilter.cpp */; };
-		29DEFF0E17C39AEB00D98688 /* AAFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 29DEFEF917C39AEB00D98688 /* AAFilter.h */; };
+		29DEFF0E17C39AEB00D98688 /* AAFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 29DEFEF917C39AEB00D98688 /* AAFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		29DEFF0F17C39AEB00D98688 /* BPMDetect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 29DEFEFA17C39AEB00D98688 /* BPMDetect.cpp */; };
-		29DEFF1017C39AEB00D98688 /* BPMDetect.h in Headers */ = {isa = PBXBuildFile; fileRef = 29DEFEFB17C39AEB00D98688 /* BPMDetect.h */; };
-		29DEFF1117C39AEB00D98688 /* cpu_detect.h in Headers */ = {isa = PBXBuildFile; fileRef = 29DEFEFC17C39AEB00D98688 /* cpu_detect.h */; };
+		29DEFF1017C39AEB00D98688 /* BPMDetect.h in Headers */ = {isa = PBXBuildFile; fileRef = 29DEFEFB17C39AEB00D98688 /* BPMDetect.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		29DEFF1117C39AEB00D98688 /* cpu_detect.h in Headers */ = {isa = PBXBuildFile; fileRef = 29DEFEFC17C39AEB00D98688 /* cpu_detect.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		29DEFF1217C39AEB00D98688 /* FIFOSampleBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 29DEFEFD17C39AEB00D98688 /* FIFOSampleBuffer.cpp */; };
-		29DEFF1317C39AEB00D98688 /* FIFOSampleBuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 29DEFEFE17C39AEB00D98688 /* FIFOSampleBuffer.h */; };
-		29DEFF1417C39AEB00D98688 /* FIFOSamplePipe.h in Headers */ = {isa = PBXBuildFile; fileRef = 29DEFEFF17C39AEB00D98688 /* FIFOSamplePipe.h */; };
+		29DEFF1317C39AEB00D98688 /* FIFOSampleBuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 29DEFEFE17C39AEB00D98688 /* FIFOSampleBuffer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		29DEFF1417C39AEB00D98688 /* FIFOSamplePipe.h in Headers */ = {isa = PBXBuildFile; fileRef = 29DEFEFF17C39AEB00D98688 /* FIFOSamplePipe.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		29DEFF1517C39AEB00D98688 /* FIRFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 29DEFF0017C39AEB00D98688 /* FIRFilter.cpp */; };
-		29DEFF1617C39AEB00D98688 /* FIRFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 29DEFF0117C39AEB00D98688 /* FIRFilter.h */; };
+		29DEFF1617C39AEB00D98688 /* FIRFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 29DEFF0117C39AEB00D98688 /* FIRFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		29DEFF1717C39AEB00D98688 /* mmx_optimized.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 29DEFF0217C39AEB00D98688 /* mmx_optimized.cpp */; };
 		29DEFF1817C39AEB00D98688 /* PeakFinder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 29DEFF0317C39AEB00D98688 /* PeakFinder.cpp */; };
-		29DEFF1917C39AEB00D98688 /* PeakFinder.h in Headers */ = {isa = PBXBuildFile; fileRef = 29DEFF0417C39AEB00D98688 /* PeakFinder.h */; };
+		29DEFF1917C39AEB00D98688 /* PeakFinder.h in Headers */ = {isa = PBXBuildFile; fileRef = 29DEFF0417C39AEB00D98688 /* PeakFinder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		29DEFF1A17C39AEB00D98688 /* RateTransposer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 29DEFF0517C39AEB00D98688 /* RateTransposer.cpp */; };
-		29DEFF1B17C39AEB00D98688 /* RateTransposer.h in Headers */ = {isa = PBXBuildFile; fileRef = 29DEFF0617C39AEB00D98688 /* RateTransposer.h */; };
+		29DEFF1B17C39AEB00D98688 /* RateTransposer.h in Headers */ = {isa = PBXBuildFile; fileRef = 29DEFF0617C39AEB00D98688 /* RateTransposer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		29DEFF1C17C39AEB00D98688 /* SoundTouch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 29DEFF0717C39AEB00D98688 /* SoundTouch.cpp */; };
-		29DEFF1D17C39AEB00D98688 /* SoundTouch.h in Headers */ = {isa = PBXBuildFile; fileRef = 29DEFF0817C39AEB00D98688 /* SoundTouch.h */; };
+		29DEFF1D17C39AEB00D98688 /* SoundTouch.h in Headers */ = {isa = PBXBuildFile; fileRef = 29DEFF0817C39AEB00D98688 /* SoundTouch.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		29DEFF1E17C39AEB00D98688 /* sse_optimized.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 29DEFF0917C39AEB00D98688 /* sse_optimized.cpp */; };
-		29DEFF1F17C39AEB00D98688 /* STTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 29DEFF0A17C39AEB00D98688 /* STTypes.h */; };
+		29DEFF1F17C39AEB00D98688 /* STTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 29DEFF0A17C39AEB00D98688 /* STTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		29DEFF2017C39AEB00D98688 /* TDStretch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 29DEFF0B17C39AEB00D98688 /* TDStretch.cpp */; };
-		29DEFF2117C39AEB00D98688 /* TDStretch.h in Headers */ = {isa = PBXBuildFile; fileRef = 29DEFF0C17C39AEB00D98688 /* TDStretch.h */; };
+		29DEFF2117C39AEB00D98688 /* TDStretch.h in Headers */ = {isa = PBXBuildFile; fileRef = 29DEFF0C17C39AEB00D98688 /* TDStretch.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -290,7 +290,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -320,7 +320,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -387,6 +387,7 @@
 				29DEFEF617C39A3D00D98688 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
