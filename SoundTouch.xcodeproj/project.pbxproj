@@ -6,6 +6,20 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		2976F26617C5AE7800AA50B2 /* Aggregate */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 2976F26917C5AE7800AA50B2 /* Build configuration list for PBXAggregateTarget "Aggregate" */;
+			buildPhases = (
+				2976F26B17C5AE8B00AA50B2 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = Aggregate;
+			productName = Aggregate;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		29DEFEE817C39A3D00D98688 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29DEFEE717C39A3D00D98688 /* Foundation.framework */; };
 		29DEFEEA17C39A3D00D98688 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29DEFEE917C39A3D00D98688 /* UIKit.framework */; };
@@ -181,6 +195,7 @@
 				29DEFEE017C39A3D00D98688 /* Frameworks */,
 				29DEFEE117C39A3D00D98688 /* Headers */,
 				29DEFEE217C39A3D00D98688 /* Resources */,
+				2976F26A17C5AE8700AA50B2 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -213,6 +228,7 @@
 			projectRoot = "";
 			targets = (
 				29DEFEE317C39A3D00D98688 /* SoundTouch */,
+				2976F26617C5AE7800AA50B2 /* Aggregate */,
 			);
 		};
 /* End PBXProject section */
@@ -227,6 +243,35 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2976F26A17C5AE8700AA50B2 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "FRAMEWORK_DIR=${BUILD_DIR}/${PRODUCT_NAME}.framework\nBUILD_FRAMEWORK_DIR=${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework\nif [ !-d \"${FRAMEWORK_DIR}\" ]\nthen\nmkdir -p \"${FRAMEWORK_DIR}\"\nfi\n\nFRAMEWORK_HEADERS_DIR=${FRAMEWORK_DIR}/Headers\nBUILD_FRAMEWORK_HEADERS_DIR=${BUILD_FRAMEWORK_DIR}/Headers\nif [ -d \"${FRAMEWORK_HEADERS_DIR}\" ]\nthen\nrm -rf \"${FRAMEWORK_HEADERS_DIR}\"\nfi\nmkdir -p \"${FRAMEWORK_HEADERS_DIR}\"\ncp -R \"${BUILD_FRAMEWORK_HEADERS_DIR}\" \"${FRAMEWORK_DIR}\"\n\nFRAMEWORK_RESOURCES_DIR=${FRAMEWORK_DIR}/Resources\nBUILD_FRAMEWORK_RESOURCES_DIR=${BUILD_FRAMEWORK_DIR}/Resources\nif [ -d \"${FRAMEWORK_RESOURCES_DIR}\" ]\nthen\nrm -rf \"${FRAMEWORK_RESOURCES_DIR}\"\nfi\nmkdir -p \"${FRAMEWORK_RESOURCES_DIR}\"\ncp -R \"${BUILD_FRAMEWORK_RESOURCES_DIR}\" \"${FRAMEWORK_DIR}\"\n\nFRAMEWORK_LIB=${FRAMEWORK_DIR}/${PRODUCT_NAME}${EFFECTIVE_PLATFORM_NAME}\nBUILD_FRAMEWORK_LIB=${BUILD_FRAMEWORK_DIR}/${PRODUCT_NAME}\nif [ -f \"${FRAMEWORK_LIB}\" ]\nthen\nrm \"${FRAMEWORK_LIB}\"\nfi\ncp \"${BUILD_FRAMEWORK_LIB}\" \"${FRAMEWORK_LIB}\"";
+		};
+		2976F26B17C5AE8B00AA50B2 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "FRAMEWORK_NAME=${PROJECT_NAME}\nFRAMEWORK_DIR=${BUILD_DIR}/${FRAMEWORK_NAME}.framework\nFRAMEWORK_LIB=${FRAMEWORK_DIR}/${FRAMEWORK_NAME}\nFRAMEWORK_LIB_DEVICE=${FRAMEWORK_LIB}-iphoneos\nFRAMEWORK_LIB_SIMULATOR=${FRAMEWORK_LIB}-iphonesimulator\n\nlipo -create \"${FRAMEWORK_LIB_DEVICE}\" \"${FRAMEWORK_LIB_SIMULATOR}\" -output \"${FRAMEWORK_LIB}\"\n\nrm \"${FRAMEWORK_LIB_DEVICE}\"\nrm \"${FRAMEWORK_LIB_SIMULATOR}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		29DEFEDF17C39A3D00D98688 /* Sources */ = {
@@ -260,6 +305,20 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		2976F26717C5AE7800AA50B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2976F26817C5AE7800AA50B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		29DEFEF217C39A3D00D98688 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -371,6 +430,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2976F26917C5AE7800AA50B2 /* Build configuration list for PBXAggregateTarget "Aggregate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2976F26717C5AE7800AA50B2 /* Debug */,
+				2976F26817C5AE7800AA50B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		29DEFEDE17C39A3D00D98688 /* Build configuration list for PBXProject "SoundTouch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
